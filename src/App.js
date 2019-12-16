@@ -86,7 +86,7 @@ class App extends React.Component {
             <div className="weather-wrapper" >
             <h2>Weather in {weather.name}, {weather.sys.country}</h2>
             <h3>
-            <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="forecast" width="50" height="50"/>
+            {/* <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="forecast" width="50" height="50"/> */}
             {weather.main.temp} °C</h3>
             <p>{weather.weather[0].description}</p>
             <p>{this.getNowTime()}</p>
@@ -143,7 +143,7 @@ class App extends React.Component {
                           <div >
                             {this.showTimeOfForecast(item.dt_txt)}
                           </div>
-                          <img src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="forecast" width="50" height="50"/>
+                          {/* <img src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="forecast" width="50" height="50"/> */}
                         </div>
                         <div >
                           <span >{item.main.temp} °C</span>
